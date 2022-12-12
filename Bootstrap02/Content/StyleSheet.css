@@ -1,0 +1,64 @@
+﻿h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    font-size: 1.7rem;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+}
+
+.header,
+.menu,
+.content,
+.footer {
+    padding: 5px 10px;
+}
+
+.header {
+    background: url("../images/Header.jpg");
+    /* กำหนดรูปพื้นหลัง */
+    background-repeat: no-repeat;
+    /* กำหนดให้รูปพื้นหลังไม่แสดงซ้าต่อกัน */
+    background-attachment: fixed;
+    /* กำหนดให้รูปพื้นหลังถูกกาหนดไว้ไม่เลื่อนตาม */
+    background-position: center center;
+    /* แสดงรูปในจากจุดกึ่งกลางภาพ */
+    background-size: cover;
+    /* หากภาพใหญ่กว่า ให้แสดงเพียงส่วนที่แสดงได้*/
+    height: 100%;
+    /* มีขนาดความยาวเท่ากับ element ทีคลุมไว้*/
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* คลาส wrapper จะแสดงผลแบบ flex */
+.icon {
+    text-align: center;
+    /* กาหนดให้แสดงตัวหนังสือตรงกลาง */
+}
+
+.wrapper-vertical {
+    display: flex;
+    /* การแสดงผลแบบ flex */
+    flex-direction: column
+}
+
+.item {
+    padding: 2%;
+}
